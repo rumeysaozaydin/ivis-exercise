@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset='utf-8'></meta>
+    <link rel="stylesheet" href="cytoscape-context-menus.css">
+    <title>Exercise</title>
+    <script src='assets/cytoscape.js'></script>
+    <script src='assets/jquery.js'></script>
+    <script src="assets/neo4j-driver.js"></script>
+    <script src='app.js'></script>
+    <script src="assets/cytoscape-cose-bilkent.js"></script>
+    <script src="assets/cytoscape-context-menus.js"></script>
+</head>
+<style>
+    #cy {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    input[type='button'] {
+        width: 100%;
+    }
+
+    #Buttons {
+        position: absolute;
+        top: 5%;
+        left: 2%;
+        width: 10%;
+    }
+
+    #layoutButtons {
+        position: absolute;
+        top: 5%;
+        right: 2%;
+    }
+
+</style>
+<body>
+    <div id='cy'></div>
+    <div id='Buttons'>
+            <label for="name">Name:</label>
+            <input id="actName" placeholder="Name" required>
+            
+            <label for="number">Number:</label>
+            <input id="number" type='number' placeholder="Number" required>
+            <button id='submitButton'>Submit</button>
+    </div>
+    <div id='layoutButtons'>
+            <input type='button' id='concentricButton' value='concentric'>
+            <input type='button' id='coseButton' value='cose'>
+    </div>
+</body>
+</html>

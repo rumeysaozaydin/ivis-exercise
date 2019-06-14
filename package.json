@@ -1,0 +1,20 @@
+{
+  "name": "neomovie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.4.2",
+    "express": "*",
+    "morgan": "*",
+    "neo4j": "^2.0.0-RC2",
+    "neo4j-driver": "^1.7.5",
+    "nodemon": "^1.19.1"
+  }
+}
